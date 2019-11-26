@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './../scss/components/_pics.scss';
 
 const Pics = (props) => {
   const {pics} = props
@@ -10,7 +9,7 @@ const Pics = (props) => {
         {pics.map(item => {
           return(
             <li className="pic__item" key={item.id}>
-              <img className="pic__img" src={item.download_url} alt=""/>
+              <img className="pic__img" src={item.download_url} alt={`Picture of:${item.author}`}/>
               <h2 className="pic__author">{item.author}</h2>
             </li>
           )
