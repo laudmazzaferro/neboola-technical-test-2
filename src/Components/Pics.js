@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import './../scss/components/_pics.scss';
 
 const Pics = (props) => {
   const {pics} = props
@@ -16,7 +18,10 @@ const Pics = (props) => {
         </ul>
       </div>
     );
-
 }
+
+Pics.propTypes = {
+  pics: PropTypes.arrayOf(PropTypes.object).isRequired
+};
 
 export default Pics;
