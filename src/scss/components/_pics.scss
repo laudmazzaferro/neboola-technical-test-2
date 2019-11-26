@@ -1,5 +1,7 @@
 .pics__container{
+  margin-top: 106px;
   width: 100vw;
+  min-width: 360px;
 }
 .pic__item{
   list-style: none;
@@ -23,4 +25,6 @@
   color:$font-color;
   font-weight: 500;	
   line-height: 80px;
+  box-sizing: border-box;
+  text-transform: capitalize;
 }

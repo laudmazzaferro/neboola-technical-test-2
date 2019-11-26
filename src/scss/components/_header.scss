@@ -1,9 +1,13 @@
 .header{
     height: 76px;	
+    width: 100vw;
     min-width: 360px;
     background-color: #FFFFFF;	
     box-shadow: 0 2px 4px 0 rgba(169,169,169,0.5);
-    margin-bottom: 30px;
+    position: fixed;;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
 }
 .title{
     font-family: $font-family;
